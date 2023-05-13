@@ -5,17 +5,10 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Edit file contents:"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Type file contents here" />
+        android:hint="Write the contents of the file here" />
 
 </LinearLayout>
