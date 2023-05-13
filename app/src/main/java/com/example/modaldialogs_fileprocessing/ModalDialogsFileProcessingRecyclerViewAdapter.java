@@ -13,7 +13,7 @@ import java.io.File;
 import java.util.List;
 
 public class ModalDialogsFileProcessingRecyclerViewAdapter extends RecyclerView.Adapter<ModalDialogsFileProcessingRecyclerViewAdapter.ViewHolder>{
-    private Context context;
+    private final Context context;
     private List<File> fileList;
 
     public ModalDialogsFileProcessingRecyclerViewAdapter(Context context, List<File> fileList) {
