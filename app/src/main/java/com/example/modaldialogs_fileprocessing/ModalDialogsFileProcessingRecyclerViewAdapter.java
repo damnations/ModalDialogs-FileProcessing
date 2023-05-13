@@ -24,7 +24,7 @@ public class ModalDialogsFileProcessingRecyclerViewAdapter extends RecyclerView.
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.item, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_layout, parent, false);
         return new ViewHolder(view);
     }
 
@@ -45,7 +45,7 @@ public class ModalDialogsFileProcessingRecyclerViewAdapter extends RecyclerView.
 
         public ViewHolder(@NonNull View view) {
             super(view);
-            fileNameTextView = view.findViewById(R.id.file_name_textview);
+            fileNameTextView = view.findViewById(R.id.textView);
             view.setOnClickListener(this);
         }
 
