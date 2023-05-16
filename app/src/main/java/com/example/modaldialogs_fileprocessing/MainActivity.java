@@ -135,8 +135,10 @@ public class MainActivity extends AppCompatActivity {
 
             // Show the contents of the file in an AlertDialog
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle(file.getName());
             View view = LayoutInflater.from(this).inflate(R.layout.file_contents_dialog, null);
+
+            builder.setTitle(file.getName());
+
             EditText editText = view.findViewById(R.id.editText);
             editText.setText(fileContents);
 
