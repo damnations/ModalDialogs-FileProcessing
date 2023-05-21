@@ -161,8 +161,16 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-            builder.setNegativeButton("Cancel", null);
-            builder.show();
+            builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.cancel();
+                }
+            });
+
+            // Create and show the AlertDialog
+            AlertDialog alertDialog = builder.create();
+            alertDialog.show();
         }
         catch (IOException e) {
             e.printStackTrace();
