@@ -138,11 +138,10 @@ public class MainActivity extends AppCompatActivity {
             View view = LayoutInflater.from(this).inflate(R.layout.file_contents_dialog, null);
 
             builder.setTitle(file.getName());
+            builder.setView(view);
 
             EditText editText = view.findViewById(R.id.editText);
             editText.setText(fileContents);
-
-            builder.setView(view);
 
             // Write the new contents back to the file
             builder.setPositiveButton("Write", new DialogInterface.OnClickListener() {
